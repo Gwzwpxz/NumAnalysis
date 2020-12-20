@@ -1,5 +1,8 @@
 % Numerical Analysis Review. Chapter 1 test
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
+
+clear;
+clc;
 
 n = 100;
 ntest = 50;

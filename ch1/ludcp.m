@@ -1,6 +1,6 @@
 function [L, U, p] = ludcp(A, ispvt)
 % Numerical Analysis Review. Chapter 1 ludcp
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 if nargin == 1
     ispvt = false;

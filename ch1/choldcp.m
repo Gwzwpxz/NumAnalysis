@@ -1,6 +1,6 @@
 function [L] = choldcp(A)
 % Numerical Analysis Review. Chapter 1 choldcp
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 [~, n] = size(A);
 

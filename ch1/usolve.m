@@ -1,6 +1,6 @@
 function [x] = usolve(U, b)
 % Numerical Analysis Review. Chapter 1 usolve
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 if ~ istriu(U)
     error("U must be upper-triangular");

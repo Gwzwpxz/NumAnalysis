@@ -1,6 +1,6 @@
 function [x] = lsolve(L, b)
 % Numerical Analysis Review. Chapter 1 lsolve
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 if ~ istril(L)
     error("L must be lower-triangular");

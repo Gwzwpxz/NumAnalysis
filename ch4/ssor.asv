@@ -1,14 +1,15 @@
-function [x] = sor(A, b, w, maxiter, tol)
+function [x] = sor(A, b, maxiter, tol)
 % Numerical Analysis Review. Chapter 1 test
 % Gwz, Shanghai University of Finance and Economics
 
-L = - tril(A, -1);
-U = - triu(A, 1);
+L = tril(A);
+U = triu(A);
 d = diag(A);
 D = diag(d);
 DwL = D - w * L;
+DwL2 = D - 
 
-M = DwL \ ((1 - w) * D + w * U);
+M1 = DwL \ ((1 - w) * D + w * U);
 g = w * (DwL \ b);
 
 n = length(d);
@@ -20,7 +21,8 @@ for i = 1:maxiter
         break;
     end % End if
     
-    x = M * x + g;
+    x1 = M1 * x + g;
+    x = 
     
 end % End for
 

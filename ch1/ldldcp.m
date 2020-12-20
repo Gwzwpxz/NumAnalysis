@@ -1,6 +1,6 @@
 function [L, d] = ldldcp(A)
 % Numerical Analysis Review. Chapter 1 ldldcp
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 [~, n] = size(A);
 
