@@ -327,7 +327,7 @@
 
   This gives the algorithm below.
 
-  <\named-algorithm|4. LDL decomposition<space|22em> >
+  <\named-algorithm|5. LDL decomposition<space|22em> >
     <strong|Input> <math|A>
 
     <strong|Initialize> <math|L=I,d=\<b-0\>>

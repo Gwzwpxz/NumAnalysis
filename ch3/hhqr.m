@@ -6,7 +6,11 @@ function [Q, R] = hhqr(A)
 Q = eye(m);
 
 for i = 1:n
-
+    
+    if i >= m
+        break;
+    end % End if
+    
     [v, beta] = hh(A(i : end, i));
     H = eye(m - i + 1) - beta * (v * v');
     A(i : end, i : end) = H * A(i : end, i : end);

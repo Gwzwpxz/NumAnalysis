@@ -1,5 +1,5 @@
-function [eigvals, Q] = eigqr(A, maxiter)
-% Numerical Analysis Review. Chapter 6 eigqr
+function [eigvals] = eighessberg(A, maxiter)
+% Numerical Analysis Review. Chapter 6 power
 % Gwz, Shanghai University of Finance and Economics
 
 [m, n] = size(A);
@@ -8,9 +8,11 @@ if ~(m == n)
     error("A must be a square matrix.");
 end % End
 
+A = hessberg(A);
+
 for i = 1:maxiter
     
-    [Q, R] = hhqr(A);
+    [Q, R] = givenshess(A);
     A = R * Q;
     
 end % End for
