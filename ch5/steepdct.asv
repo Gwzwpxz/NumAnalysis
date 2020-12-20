@@ -16,7 +16,7 @@ for i = 1:maxiter
         break;
     end % End if
     
-    x = x - (rnorm^2 / rAnorm) * res;
+    x = x + (rnorm / rAnorm)^2 * res;
     
 end % End for
 

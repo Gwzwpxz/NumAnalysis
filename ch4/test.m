@@ -1,4 +1,4 @@
-% Numerical Analysis Review. Chapter 1 test
+% Numerical Analysis Review. Chapter 4 test
 % Gwz, Shanghai University of Finance and Economics
 
 clear;

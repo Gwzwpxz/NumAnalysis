@@ -6,18 +6,18 @@ function x = cg(A, b, maxiter, tol)
 x = zeros(n, 1);
 p = zeros(n, 1);
 bnorm = norm(b);
-res = A * x - b;
 
 for i = 1:maxiter
     
+    res = A * x - b;
     rnormpres = norm(res);
-  
+    
     if rnormpres / bnorm < tol
         break;
     end % End if
     
     if i == 1
-        p = - res;
+        p = res;
     else
         p = - res + (rnormpres / rnormprev)^2 * p;
     end % End if
@@ -25,7 +25,7 @@ for i = 1:maxiter
     w = A * p;
     alpha = rnormpres^2 / (p' * w);
     x = x + alpha * p;
-    res = res + alpha * w;
+    r = r + alpha * w;
     rnormprev = rnormpres;
     
 end % End for

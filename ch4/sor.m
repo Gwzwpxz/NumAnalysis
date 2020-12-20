@@ -1,5 +1,5 @@
 function [x] = sor(A, b, w, maxiter, tol)
-% Numerical Analysis Review. Chapter 1 test
+% Numerical Analysis Review. Chapter 4 sor
 % Gwz, Shanghai University of Finance and Economics
 
 L = - tril(A, -1);

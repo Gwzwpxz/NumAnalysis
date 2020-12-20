@@ -1,5 +1,5 @@
 function [x] = jacobi(A, b, maxiter, tol)
-% Numerical Analysis Review. Chapter 1 test
+% Numerical Analysis Review. Chapter 4 jacobi
 % Gwz, Shanghai University of Finance and Economics
 
 L = - tril(A, -1);
