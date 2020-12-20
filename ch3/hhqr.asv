@@ -1,11 +1,15 @@
 function [Q, R] = hhqr(A)
 % Numerical Analysis Review. Chapter 1 hhqr
-% Gwz, Shanghai University of Finance and Econmics
+% Gwz, Shanghai University of Finance and Economics
 
 [m, n] = size(A);
 Q = eye(m);
 
-for i = 1:n
+if m > n
+    error("More colu
+
+
+for i = 1 : m - 1
 
     [v, beta] = hh(A(i : end, i));
     H = eye(m - i + 1) - beta * (v * v');

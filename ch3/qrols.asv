@@ -1,5 +1,5 @@
-function [x] = qrols(A, b)
-% Numerical Analysis Review. Chapter 3 qrols
+function [x] = qrols(A, b);
+% Numerical Analysis Review. Chapter 3 hh
 % Gwz, Shanghai University of Finance and Economics
 
 [m, n] = size(A);
@@ -14,8 +14,11 @@ else
     [Q, R] = hhqr(A);
 end % End if
 
-R1 = R(1 : n, :);
+R1 = R(1 : m, :);
 QTb = Q' * b;
-x = usolve(R1, QTb(1 : n)); 
+x1 = usolve(R1, QTb(1 : m)); 
 
+x = Q * [x1, zeros(n
+    
+    
 end % End function
